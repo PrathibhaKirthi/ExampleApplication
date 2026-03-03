@@ -42,7 +42,7 @@ jobs:
           command: |
             sudo apt-get update
             sudo apt-get install -y openssh-client
-            ssh -o StrictHostKeyChecking=no ubuntu@ec2-107-22-110-242.compute-1.amazonaws.com "
+            ssh -o StrictHostKeyChecking=no ubuntu@3.84.130.111 "
               rm -rf ExampleApplication &&
               git clone https://github.com/PrathibhaKirthi/ExampleApplication.git &&
               cd ExampleApplication &&
